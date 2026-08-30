@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('../assets/fonts/instrument-sans-latin-variable.woff2') format('woff2-variations');
+}
+
+:root {
+  --color-bg: #f1ede2;
+  --color-bg-soft: #e7e0cf;
+  --color-olive: #8a7d49;
+  --color-olive-dark: #5f5834;
+  --color-brown: #4a392d;
+  --color-graphite: #111111;
+  --color-text: var(--color-graphite);
+  --color-text-muted: #6f6a60;
+  --color-muted: var(--color-text-muted);
+  --color-line: rgba(17, 17, 17, 0.16);
+  --font-sans: 'Instrument Sans', Arial, Helvetica, sans-serif;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --page-gutter: clamp(1.25rem, 3.15vw, 4.5rem);
+  --header-height: clamp(5.25rem, 6vw, 6.25rem);
+  --logo-width: clamp(9.375rem, 10vw, 10.625rem);
+  --text-meta: 0.6875rem;
+  --text-body: clamp(0.9375rem, 1.1vw, 1.125rem);
+  --text-display: clamp(3.4rem, 4.8vw, 6.1rem);
+  --step-number: clamp(4.5rem, 6vw, 7.5rem);
+  --step-title: clamp(1.35rem, 1.55vw, 1.8rem);
+  --step-body: clamp(1.35rem, 1.45vw, 1.75rem);
+  --step-caption: clamp(0.68rem, 0.7vw, 0.82rem);
+  --step-title-mobile: clamp(1.2rem, 5vw, 1.45rem);
+  --step-body-mobile: clamp(1.1rem, 4.6vw, 1.3rem);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-intro: 2.6s;
+  --z-header: 10;
+  --z-menu: 20;
+  --z-intro: 30;
+}

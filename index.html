@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PHB70 — développement et production de mobilier sur mesure." />
+    <title>PHB70 — Mobilier sur mesure</title>
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/approach.css" />
+    <link rel="stylesheet" href="css/project-book.css" />
+    <link rel="stylesheet" href="assets/vendor/page-flip/page-flip.css" />
+    <script src="assets/vendor/page-flip/page-flip.browser.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="intro" data-intro aria-hidden="true">
+      <span class="intro__line"></span>
+      <div class="intro__mark" data-intro-mark>
+        <span class="intro__logo-part intro__logo-part--top">
+          <img src="assets/brand/phb70-logo.svg" alt="" />
+        </span>
+        <span class="intro__logo-part intro__logo-part--bottom">
+          <img src="assets/brand/phb70-logo.svg" alt="" />
+        </span>
+      </div>
+    </div>
+    <script>
+      window.setTimeout(() => {
+        const intro = document.querySelector('[data-intro]');
+        if (intro && !document.body.classList.contains('intro-complete')) {
+          document.body.classList.add('intro-complete');
+          intro.remove();
+        }
+      }, 2200);
+    </script>
+
+    <header class="site-header">
+        <a class="brand" href="/" aria-label="PHB70 — Accueil">
+        <img src="assets/brand/phb70-logo.svg" width="1000" height="260" alt="PHB70" />
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#projects">Projets</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+        <a href="#language" lang="fr">FR</a><span aria-hidden="true"> / </span><a href="#language" aria-current="page">EN</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Mobile navigation">
+        <a href="#projects">Projets</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+        <a href="#language" lang="fr">FR / EN</a>
+      </nav>
+    </div>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <div class="hero__copy">
+            <p class="hero__eyebrow" data-hero-reveal>Notre mission</p>
+            <h1 id="hero-title" data-hero-reveal>Donner vie<br /><span>à votre projet</span></h1>
+          </div>
+          <figure class="hero__media" data-hero-media>
+            <img
+              src="assets/images/hero/phb70-hero.jpg"
+              width="1024"
+              height="683"
+              alt="Intérieur de chambre d’hôtel avec mobilier sur mesure"
+              fetchpriority="high"
+            />
+          </figure>
+          <p class="hero__signature" data-hero-reveal>De l’intention créative<br />à la pièce réalisée.</p>
+        </div>
+        <div class="hero__metadata" data-hero-reveal>
+          <p class="hero__locations"><span>Paris</span><span>New York</span><span>Luxembourg</span><span>Portugal</span></p>
+          <a class="hero__scroll" href="#projects">Défiler <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="approach" id="approach" aria-labelledby="approach-title">
+        <header class="approach__intro">
+          <p class="approach__kicker">01 / Notre expertise</p>
+          <h2 id="approach-title">De l’étude<br />à la production.</h2>
+          <p class="approach__lede">PHB70 accompagne chaque projet depuis l’analyse de faisabilité jusqu’à la mise en production, avec un bureau d’étude intégré et des équipes proches des sites de fabrication.</p>
+        </header>
+
+        <div class="approach__sequence">
+          <article class="making-step making-step--feasibility">
+            <p class="making-step__number">01</p>
+            <div class="making-step__copy">
+              <h3><span class="line-mask"><span class="making-step__title-line">Conseil &amp;</span></span><span class="line-mask"><span class="making-step__title-line">analyse de</span></span><span class="line-mask"><span class="making-step__title-line">faisabilité</span></span></h3>
+              <p>Analyse technique du projet, contraintes, faisabilité et premières orientations de fabrication.</p>
+            </div>
+            <figure class="making-step__media">
+              <div class="media-reveal"><img src="assets/images/approach/hotel-bedroom-wood.jpg" width="1024" height="665" loading="lazy" alt="Chambre d’hôtel avec tête de lit, rideaux et bureau en bois" /><span class="media-reveal__cover" aria-hidden="true"></span></div>
+              <figcaption>Hôtellerie — mobilier sur mesure</figcaption>
+            </figure>
+          </article>
+
+          <article class="making-step making-step--prototyping">
+            <p class="making-step__number">02</p>
+            <div class="making-step__copy">
+              <h3><span class="line-mask"><span class="making-step__title-line">Élaboration du</span></span><span class="line-mask"><span class="making-step__title-line">descriptif</span></span><span class="line-mask"><span class="making-step__title-line">technique</span></span></h3>
+              <p>Définition des caractéristiques, matériaux, finitions et exigences nécessaires à la fabrication.</p>
+            </div>
+            <figure class="making-step__media">
+              <div class="media-reveal"><img src="assets/images/approach/phb70-restaurant-interior.jpg" width="2560" height="1707" loading="lazy" alt="Restaurant lumineux avec fauteuils, tables et luminaires sur mesure" /><span class="media-reveal__cover" aria-hidden="true"></span></div>
+              <figcaption>Restauration — mobilier sur mesure</figcaption>
+            </figure>
+          </article>
+
+          <article class="making-step making-step--production">
+            <p class="making-step__number">03</p>
+            <div class="making-step__copy">
+              <h3><span class="line-mask"><span class="making-step__title-line">Création du</span></span><span class="line-mask"><span class="making-step__title-line">prototype</span></span></h3>
+              <p>Mise au point et suivi du prototype afin de valider les choix techniques avant fabrication.</p>
+            </div>
+            <figure class="making-step__media">
+              <div class="media-reveal"><img src="assets/images/approach/hotel-room-classic.jpg" width="1024" height="683" loading="lazy" alt="Intérieur d’hôtel avec lit, mur minéral et mobilier sur mesure" /><span class="media-reveal__cover" aria-hidden="true"></span></div>
+              <figcaption>Hôtellerie — réalisation sur mesure</figcaption>
+            </figure>
+          </article>
+
+          <article class="making-step making-step--quality">
+            <p class="making-step__number">04</p>
+            <div class="making-step__copy">
+              <h3><span class="line-mask"><span class="making-step__title-line">Mise en</span></span><span class="line-mask"><span class="making-step__title-line">production.</span></span></h3>
+              <p>Validation des procédés de fabrication et lancement de la production auprès des ateliers partenaires.</p>
+            </div>
+          </article>
+        </div>
+
+        <section class="project-book" aria-labelledby="project-book-title">
+          <header class="project-book__header">
+            <p class="project-book__kicker">Quelques réalisations</p>
+            <h2 id="project-book-title">Projets, détails<br />&amp; pièces réalisées.</h2>
+          </header>
+
+          <div class="project-book__stage" data-project-book-stage>
+            <div class="project-book__shell is-closed is-initializing">
+              <div class="project-book__book" data-project-book-book aria-label="Livre des réalisations PHB70"></div>
+            </div>
+            <p class="project-book__hint" data-project-book-hint>Tourner la page <span aria-hidden="true">→</span></p>
+          </div>
+
+          <nav class="project-book__controls" aria-label="Navigation des réalisations">
+            <button type="button" data-project-book-previous aria-label="Réalisation précédente">Précédent</button>
+            <p><output data-project-book-current>01</output><span aria-hidden="true"> / </span><span data-project-book-total>03</span></p>
+            <button type="button" data-project-book-next aria-label="Réalisation suivante">Suivant</button>
+          </nav>
+          <p class="project-book__status" data-project-book-status aria-live="polite"></p>
+          <p class="project-book__cta" aria-disabled="true">Découvrir tous les projets <span aria-hidden="true">→</span></p>
+        </section>
+
+        <footer class="approach__years" id="contact">
+          <div class="approach__footer-brand">
+            <img src="assets/brand/phb70-logo.svg" width="1000" height="260" alt="PHB70" />
+            <p>Mobilier sur mesure<br />Développement &amp; production</p>
+          </div>
+
+          <div class="approach__footer-grid">
+            <nav aria-label="Navigation de pied de page">
+              <p>Navigation</p>
+              <a href="#approach">Projets</a>
+              <a href="#approach">Expertise</a>
+              <a href="https://www.phb70.com/">À propos</a>
+            </nav>
+            <div class="approach__footer-locations">
+              <p>Implantations</p>
+              <div>
+                <span>Paris</span>
+                <span>New York</span>
+                <span>Luxembourg</span>
+                <span>Portugal</span>
+              </div>
+            </div>
+            <div>
+              <p>Contact</p>
+              <a href="https://www.phb70.com/contactez-nous/">Contactez-nous <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+
+          <div class="approach__footer-bottom">
+            <p>PHB70</p>
+            <p>Un réseau international construit depuis plus de 20 ans.</p>
+            <small>© 2026 PHB70.INC, all rights reserved.</small>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

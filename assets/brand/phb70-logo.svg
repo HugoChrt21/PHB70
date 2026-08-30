@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1056 160" role="img" aria-label="PHB70" color="#000" shape-rendering="geometricPrecision">
+  <defs>
+    <!-- Pure vector cut: no mask, no raster/compositing. The visible geometry is clipped
+         into two exact bands, so the central opening remains perfectly stable at any zoom. -->
+    <clipPath id="architectural-cut" clipPathUnits="userSpaceOnUse">
+      <path d="M0 0H1056V70H0Z M0 90H1056V160H0Z"/>
+    </clipPath>
+  </defs>
+
+  <g id="phb70-wordmark" fill="currentColor" clip-path="url(#architectural-cut)">
+    <g id="glyph-p">
+      <path d="M0 0H138C172 0 194 18 194 49C194 78 173 96 138 96H24V160H0V84H138C158 84 170 72 170 50C170 29 157 18 138 18H24V72H0Z"/>
+    </g>
+
+    <g id="glyph-h" transform="translate(222 0)">
+      <path d="M0 0H24V70H168V0H192V160H168V90H24V160H0Z"/>
+    </g>
+
+    <g id="glyph-b" transform="translate(444 0)">
+      <path fill-rule="evenodd" d="M0 0H137C169 0 191 16 191 45C191 63 181 76 165 83C186 89 199 102 199 122C199 147 180 160 145 160H0V0ZM24 18V73H136C156 73 167 63 167 46C167 28 156 18 136 18H24ZM24 91V142H144C164 142 175 133 175 117C175 100 163 91 144 91H24Z"/>
+    </g>
+
+    <g id="glyph-7" transform="translate(676 0)">
+      <path d="M0 0H177V18H157L69 160H40L135 18H0Z"/>
+    </g>
+
+    <g id="glyph-0" transform="translate(868 0)">
+      <path fill-rule="evenodd" d="M103 0C154 0 188 31 188 80C188 129 154 160 103 160H85C34 160 0 129 0 80C0 31 34 0 85 0H103ZM86 18C48 18 24 41 24 80C24 119 48 142 86 142H102C140 142 164 119 164 80C164 41 140 18 102 18H86Z"/>
+    </g>
+  </g>
+</svg>

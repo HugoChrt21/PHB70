@@ -17,7 +17,7 @@ function setSessionValue(key, value) {
   }
 }
 
-function setupMenu() {
+export function initMenu() {
   const button = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.mobile-menu');
 
@@ -36,7 +36,7 @@ export function initHero() {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const introSeen = getSessionValue(INTRO_KEY) === 'true';
 
-  setupMenu();
+  initMenu();
 
   if (!intro || reduceMotion || introSeen) {
     document.body.classList.add('intro-complete');

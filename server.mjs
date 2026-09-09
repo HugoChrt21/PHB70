@@ -28,7 +28,11 @@ function sendError(response, statusCode, message) {
 
 createServer((request, response) => {
   const pathname = decodeURIComponent(new URL(request.url, `http://${HOST}`).pathname);
-  const relativePath = pathname === '/' ? 'index.html' : pathname.replace(/^[/\\]+/, '');
+  const relativePath = pathname === '/'
+    ? 'index.html'
+    : pathname.endsWith('/')
+      ? `${pathname.replace(/^[/\\]+/, '')}index.html`
+      : pathname.replace(/^[/\\]+/, '');
   const filePath = resolve(ROOT, normalize(relativePath));
 
   if (!filePath.startsWith(ROOT)) {
